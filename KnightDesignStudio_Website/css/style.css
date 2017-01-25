@@ -1,0 +1,395 @@
+/*
+Knight Design Studio Website
+Client: Knight Design Studio
+Author: Debi Knight
+Developer: Debi Knight
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: white;
+     font-family: 'Muli', helvetica, arial, sans-serif;
+     color: white;
+     font-size: 16px;
+     line-height: 1.4;
+     font-weight: 300;
+     text-align: left;
+     text-decoration: none;
+     width: 100%;
+     margin: auto;
+     padding: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+div .laptop {
+     width: 100%;
+     min-width: 1200px;
+     position: relative;
+     margin: auto;
+     background-color: white;
+}
+
+#centered {
+     width: 1200px;
+     margin: auto;
+}
+
+div .container {
+     width: 1200px;
+     margin: auto;
+     background-color: white;
+     display: inline-block;
+}
+
+header {
+     width: 100%;
+     height: 5px;
+}
+
+.column {
+     width: 240px;
+     float: left;
+     border: none;
+     padding: 0;
+     margin: 0;
+}
+
+section {
+     width: 240px;
+     height: 240px%;
+     margin: auto;
+     text-align: bottom;
+}
+
+.blankSquare {
+     background-color: white;
+     width: 240px;
+     height: 240px;
+}
+
+.redSquare {
+     background-color: rgb(206, 0, 55);
+     background-size: cover;
+     width: 240px;
+     height: 240px;
+     overflow: hidden;
+}
+
+.purpleSquare {
+     background-color: rgb(60, 16, 83);
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 10px;
+     padding-bottom: 20px;
+     width: 240px;
+     height: 240px;
+}
+
+footer {
+     width: 100%;
+     height: 20px;
+     background-color: white;
+}
+
+#titleSquare {
+     width: 240px;
+     background-color: white;
+     vertical-align: center;
+     color: black;
+     margin-top: 84px;
+}
+
+#portrait {
+     overflow: hidden;
+     margin-top: 39px;
+}
+
+#horse {
+     position: relative;
+     width: 240px;
+     height: 240px;
+     background-color: rgb(206, 0, 55);
+     padding-left: 50px;
+}
+
+#intro {
+     padding-top: 50px;
+}
+
+#contact {
+     padding-top: 50px;
+     padding-left: 10px;
+}
+
+#social {
+     padding-top: 120px;
+     padding-right: 90px;
+     text-align: left;
+}
+
+#nav {
+     padding-top: 60px;
+}
+
+#copyrightProtection {
+     padding-top: 175px;
+     vertical-align: text-bottom;
+}
+
+.signUp {
+     padding-top: 10px;
+
+}
+
+/* Following code styles the modal 
+pop up box for the newsletter signup */
+
+
+#modalBox {
+     display: none; 
+     position: fixed;
+     top: 20%;
+     left: 30%;
+     z-index: 1;
+     border: none;
+     width: 600px;
+     height: 600px;
+     overflow: auto;
+     background-color: rgba(255, 255, 255, 0.9);
+     color: black;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),0 6px 20px 0 rgba(0,0,0,0.19);
+     -webkit-animation-name: animatetop;
+     -webkit-animation-duration: 0.4s;
+     animation-name: animatetop;
+     animation-duration: 0.4s;
+}
+
+/* add animation for modal 
+
+@-webkit-keyframes animatetop {
+     from {top: -300px; opacity: 0;}
+     to {top: 0; opacity: 1;}
+}
+
+@keyframes animatetop {
+     from {top: -300px; opacity: 0}
+     to {top: 0; opacity: 1;}
+}
+ 
+*/
+
+.modal-header {
+     width: 100%;
+     height: 100px;
+     padding-top: 10px;
+     padding-left: 40px;
+     padding-right: ;
+}
+
+#signupBox {
+     position: fixed;
+     top: 5px;
+     left: 20px;
+     height: 60px;
+     width: 60px;
+     z-index: 5;
+     background-color: rgb(206, 0, 55);
+     padding-left: 30px;
+     text-align: bottom;
+     color: black;
+}
+
+
+
+
+
+
+
+/******************************************
+/* DESIGN STYLES
+/*******************************************/
+
+h1 {
+     font-weight: 600;
+     text-align: center;
+     font-size: 16px;
+     line-height: 1;
+     color: black;
+}
+
+h2 {
+     font-weight: bold;
+     text-align: left;
+     font-size: 14px;
+     line-height: 1;
+}
+
+li {
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 1.4;
+}
+
+h3 {
+     font-weight: bold;
+     font-size: 20px;
+}
+
+h3 .inTouch {
+     color: rgb(206, 0, 55);
+     padding: 0;
+     margin-bottom: 50px;
+}
+
+img#horseLogo {
+     position: absolute;
+     top: -90px;
+}
+
+#copyright {
+     font-size: 10px;
+     text-align: left;
+}
+
+#photoIntro {
+     text-align: right;
+     vertical-align: bottom;
+}
+
+#artSquare {
+     text-align: right;
+}
+
+.signUp {
+     vertical-align: top;
+}
+
+.attribution {
+     font-style: italic;
+     text-align: right;
+}
+p {
+     font-size: 16px;
+     line-height: 1.4;
+}
+
+p .phone {
+     font-size: 20px;
+     font-weight: 800;
+}
+
+p .email {
+     font-size: 18px;
+     font-weight: 500;
+}
+p .opinionated {
+     margin: -20px;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+     padding: 0;
+     text-align: left;
+}
+a:hover {
+     color: rgb(175, 238, 238);
+}
+
+ul.links{
+     padding: 0;
+}
+
+.newsletterSignup {
+     display: block;
+     width: 50px;
+     height: 50px;
+     background-color: white;
+     color: rgb(206, 0, 55);
+     border-radius: 50%;
+     border-style: dotted;
+     border-width: 9px;
+     border-color: rgb(206, 0, 55);
+     font-weight: bold;
+     line-height: 1;
+     font-size: 20px;
+     border: none;
+     text-align: center;
+     text-decoration: none;
+     box-shadow: 0 0 3px gray;
+     cursor: pointer;
+}
+
+button:hover {
+     background-color: rgb(175, 238, 238);
+     border: none;
+}
+
+
+/* model box styling */
+
+.close {
+     color: rgb(60, 16, 83);
+     float: right;
+     font-size: 36px;
+     font-weight: bold;
+     padding-top: -20px;
+     padding-right: 20px;
+}
+.close:hover,
+.close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+}
+
+
+
+
+
+
